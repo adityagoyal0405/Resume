@@ -270,6 +270,14 @@ section:nth-child(2n + 1) {
     .flex-container{
       display:flex;
     }
+    .flex-child {
+    flex: 1;
+    
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
   </style>
 </head>
 <body>
@@ -388,7 +396,7 @@ section:nth-child(2n + 1) {
                 <span> Contact </span>
             </h1>
       <div class="flex-container">
-      <div class="text-center">
+      <div class="text-center flex-child">
       <form >
         <input type="text" id="name" name="name" placeholder="Your Name"><br>
         <input type="email" id="email" name="email" placeholder="Your Email" ><br>
@@ -398,7 +406,7 @@ section:nth-child(2n + 1) {
         
       </form>
       </div>
-      <div class="text-center">
+      <div class="text-center flex-child">
         <h4 class="contact-sub-heading">Get in touch</h4>
          <p id="p-tag-contact">
             <span>
