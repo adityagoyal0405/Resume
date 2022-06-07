@@ -229,7 +229,24 @@ section:nth-child(2n + 1) {
 #contact{
   background:linear-gradient(45deg,#2857a4,#403066);
     }
+
+    input[type=text], input[type=email]{
+      
+      width:100%;
+      border-bottom: 2px solid white;
+      color:white;
+      background:linear-gradient(45deg,#2857a4,#403066);
+  }
+  input[type=submit]{
     
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    background:linear-gradient(45deg,#2857a4,#403066);
+    border:2px solid white;
+    }
+    
+     
   </style>
 </head>
 <body>
@@ -347,7 +364,7 @@ section:nth-child(2n + 1) {
                 </span>
                 <span> Contact </span>
             </h1>
-      <form>
+      <form >
         <input type="text" id="name" name="name" placeholder="Your Name"><br>
         <input type="email" id="email" name="email" placeholder="Your Email" ><br>
         <input type="text" id="message" name="message" placeholder="Your Message"><br>
