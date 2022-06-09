@@ -28,7 +28,7 @@ body {
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 
 
@@ -154,9 +154,10 @@ section:nth-child(2n + 1) {
     /*height: 100px;*/
     /*border: 2px solid black; 	*/
     display: flex;
-   
+    margin-top:4rem; 
+    margin-bottom:1.5rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skill-progress {
@@ -164,18 +165,26 @@ section:nth-child(2n + 1) {
     height: 1.4rem;
     background-color: lightgrey;
     border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
     /*border: 2px solid black;*/
 }
 
 .skill-progress>div  /*by this style will apply only to divs which are direct child of skill progress*/ {
     border-radius: 20px 0px 0px 20px;
-}
+} 
 
 .skill-name span {
-    color: white;
-    font-size: 1rem;
-    margin-left: 10px;
+    margin: 0;
 }
+.skill-name {
+   font-size: 15px;
+    color: white;
+    padding: 6px 0 10px 20px;
+    
+
+}
+    
 
 /* Common Margin Classes */
 .mb75px {
@@ -209,4 +218,171 @@ section:nth-child(2n + 1) {
     width: 80%;
     height: inherit;
 }
+    /*Education Section */
+/*#education{
+  background:linear-gradient(45deg,#EDFC56,#E6FC03);
+    }  */  
+.timeline {
+  position:relative;
+  width:75%;
+    }
+.timeline-box{
+    position:relative;
+    width:40%;
+    margin:5px;
+    left:5%;
+    min-height:150px;
+    }
+ .timeline-box:nth-child(2n){
+    left:53%;
+    }
+    
+   .timeline-box:nth-child(2n+1)::after{
+     
+     content:'';
+     position:absolute;
+     top:30%;
+     right:-12.5%;
+     border-radius:50%;
+     background-color:black;
+     width:0.5rem;
+     height:0.5rem;
+     z-index:1;
+     
+    }
+    .timeline-box:nth-child(2n)::after{
+     
+     content:'';
+     position:absolute;
+     top:30%;
+     left:-9%;
+     border-radius:50%;
+     background-color:black;
+     width:0.5rem;
+     height:0.5rem;
+     z-index:1;
+    }
+ .timeline-divider{
+    position:absolute;
+    height:75%;
+    width:0;
+    border-right:3px dashed black;
+    top:10%;
+    left:50%;
+    }
+    
+   @media screen and (max-width:600px){
+    .timeline-divider{
+     left:5%;
+     }
+    .timeline-box{
+     left:12% !important  /* by this important, this left 12% will supercede all rules*/;
+     width:80%;
+     }
+     .timeline-box::after{
+     left:-12% !important;
+     }
+/*      .timeline-box:nth-child(2n+1)::after{
+     left:-12%;
+     
+     }
+     .timeline-box:nth-child(2n)::after{
+     left:-12%;
+     
+     } */
+  /* .timeline-box:nth-child(2n){
+    left:12%;
+    }*/
+    }
+  .timeline-traveller{
+    
+    position:sticky;
+    top:30%;
+    transform: rotate(90deg);
+    z-index:2;
+    }
+    
+ .education-year{
+   line-height:0px;
+    }
+   /*Portfolio Section */
+   .portfolio-menu li{
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 2rem;
+    }
+  .portfolio-menu li a{
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s, border-bottom 4s;
+    
+    }
+    .portfolio-menu li a:hover{
+     color: grey;
+     border-bottom: 1px solid black;
+    
+    }
+    /*Contact Section */
+#contact{
+  background:linear-gradient(45deg,#2857a4,#403066);
+    }
+ ::placeholder{
+   color:white;
+    }
+  input[type=text], input[type=email]{
+      
+      width:100%;
+      border:none;
+      border-bottom: 2px solid white;
+      /*color:white;*/
+      
+      padding: 12px 20px;
+      margin: 8px 0;
+      background:rgba(255,255,255,0);
+  }
+  input[type=submit]{
+    
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+   
+    border:2px solid white;
+    background:rgba(255,255,255,0);
+    }
+   input[type=submit]:hover{
+     border:3px solid white;
+    }
+    
+ 
+    
+ .contact-heading{
+    color:white;
+    font-size: 40px;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+    }
+    
+  .contact-sub-heading{
+    color:white;
+    text-decoration:none;
+    }
+    #p-tag-contact{
+      color:white;
+      font-size:1rem;
+    }
+    .flex-container{
+      display:flex;
+    }
+    .flex-child {
+    flex: 1;
+    
+}  
+
+.flex-child:first-child {
+    margin-right: 80px;
+} 
+.flex-child:second-child {
+    margin-left: 80px;
+} 
 
