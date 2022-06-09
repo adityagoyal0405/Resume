@@ -173,9 +173,10 @@ section:nth-child(2n + 1) {
     /*height: 100px;*/
     /*border: 2px solid black; 	*/
     display: flex;
-    margin-bottom:5px;
+    margin-top:4rem; 
+    margin-bottom:1.5rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skill-progress {
@@ -183,6 +184,8 @@ section:nth-child(2n + 1) {
     height: 1.4rem;
     background-color: lightgrey;
     border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
     /*border: 2px solid black;*/
 }
 
@@ -191,10 +194,13 @@ section:nth-child(2n + 1) {
 }
 
 .skill-name span {
+    margin: 0;
+}
+.skill-name {
+   font-size: 15px;
     color: white;
-    font-size: 1rem;
-    margin-left: 10px;
-    margin-top:0px;
+    padding: 6px 0 10px 20px;
+
 }
     
 
